@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void area(double maior, double menor, double altura, double *A)
+{
+    *A=(maior+menor)*altura/2;
+}
+int main() {
+    double BG, BM, ALT, A;
+
+    scanf("%lf %lf %lf", &BG, &BM, &ALT);
+    area(BG, BM, ALT, &A);
+    printf("%.1lf", A);
+	return 0;
+}
