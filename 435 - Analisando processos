@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void processo(int a, int *r)
+{
+	*r=480/a;
+}
+int main() {
+	int x;
+	int r;
+	scanf("%d", &x);
+	processo(x,&r);
+	printf("%d", r);
+	return 0;
+}
