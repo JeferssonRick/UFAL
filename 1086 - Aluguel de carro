@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void aluguel(int dias, int km, double *total)
+{
+	double valor;
+
+	valor=(dias*30.00)+(km*0.01);
+	*total=valor- (valor*0.10);
+}
+int main() {
+	int d,k;
+	double total;
+	scanf("%d %d", &d, &k);
+	aluguel(d,k,&total);
+	printf("%.2lf", total);
+	return 0;
+}
