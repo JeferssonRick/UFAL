@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void area(int base, int altura, int *A)
+{
+    *A=base*altura;
+}
+int main() {
+    int B,ALT;
+    int A;
+    scanf ("%d %d", &B, &ALT);
+    area(B, ALT, &A);
+    printf("%d", A);
+	return 0;
+}
