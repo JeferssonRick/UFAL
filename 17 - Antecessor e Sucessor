@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int ant (int p)
+{
+    int r;
+    r= p-1;
+    return r;
+}
+int pos (int p)
+{
+    int s;
+    s=p+1;
+    return s;
+}
+void main() {
+    int num, antecessor, sucessor;
+    scanf("%d", &num);
+    antecessor= ant (num);
+    sucessor= pos (num);
+    printf("%d %d", antecessor, sucessor);
+}
