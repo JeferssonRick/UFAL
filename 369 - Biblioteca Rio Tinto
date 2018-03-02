@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int dias;
+    double multa;
+    scanf("%d", &dias);
+    multa=dias*0.75;
+    printf("%.2lf", multa);
+	return 0;
+}
