@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+double a(double r)
+{
+    double b;
+    b=(r/100*r/100)*3.14159;
+    
+    return b;
+}
+double main() 
+{
+    double res;
+    double num; 
+    scanf("%lf", &num);
+    res=a(num);
+    printf("Area = %.4lf\n", res);
+	return 0;
+}
