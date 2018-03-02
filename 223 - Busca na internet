@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+	int t, link;
+	scanf("%d",&t);
+	link=(t*2)*2;
+	printf("%d\n",link);
+	return 0;
+}
