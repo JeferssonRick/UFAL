@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+double valor(int a, int b)
+{
+    int r,n = 0;
+    
+    if (b > (100 * a)) {
+        n = b-(100*a);
+    }
+    
+    r = a*90+n*12;
+
+    return r;
+}
+
+double main() {
+
+    double total;
+    int num1,num2;
+    scanf("%d\n%d", &num1, &num2);
+    total = valor(num1,num2);
+    printf("%.2f", total);
+	return 0;
+}
