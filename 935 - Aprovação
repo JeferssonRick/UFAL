@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+  double a, b, c, media;
+  scanf("%lf %lf %lf", &a,&b, &c);
+  media=(a+b+c)/3;
+  if(media>=7)
+  {
+    printf("Informe a primeira nota:\nInforme a segunda nota:\nInforme a terceira nota:\nAprovado com media %.1lf",media);
+  }
+  else if(media>=5 && media<7)
+  {
+      printf("Informe a primeira nota:\nInforme a segunda nota:\nInforme a terceira nota:\nRecuperacao com media %.15lf",media);
+  }
+  else{
+      printf("Informe a primeira nota:\nInforme a segunda nota:\nInforme a terceira nota:\nReprovado com media %.1lf",media);
+  }
+	return 0;
+}
