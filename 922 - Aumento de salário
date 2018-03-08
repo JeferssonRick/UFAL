@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+double sal,aumento,percentual, total;
+scanf("%lf", &sal);
+if(sal<=280.00)
+{
+  aumento= sal*0.20;
+  total= sal+aumento;
+  printf("Informe o salario do colaborador:\nSalario antes do reajuste: %.1lf\nPercentual de aumento aplicado: 20%%\nValor do aumento: %.14lf\nSalario com reajuste: %.2lf\n", sal, aumento, total);
+}
+
+if(sal>280.00 && sal<=700.00)
+{
+  aumento= sal*0.15;
+  total= sal+aumento;
+  printf("Informe o salario do colaborador:\nSalario antes do reajuste: %.1lf\nPercentual de aumento aplicado: 15%%\nValor do aumento: %.14lf\nSalario com reajuste: %.2lf\n", sal, aumento, total);
+}
+
+if(sal>700.00 && sal<=1500.00)
+{
+  aumento= sal*0.10;
+  total= sal+aumento;
+  printf("Informe o salario do colaborador:\nSalario antes do reajuste: %.1lf\nPercentual de aumento aplicado: 10%%\nValor do aumento: %.14lf\nSalario com reajuste: %.2lf\n", sal, aumento, total);
+}
+
+if(sal>1500.00)
+{
+  aumento= sal*0.05;
+  total= sal+aumento;
+  printf("Informe o salario do colaborador:\nSalario antes do reajuste: %.1lf\nPercentual de aumento aplicado: 5%%\n Valor do aumento: %.14lf\nSalario com reajuste: %.2lf\n", sal, aumento, total);
+}
+
+	return 0;
+}
